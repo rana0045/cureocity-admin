@@ -1,0 +1,47 @@
+{
+  "name": "cureocity-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.16",
+    "@heroicons/react": "^2.0.18",
+    "@material-tailwind/react": "^2.1.0",
+    "@types/date-fns": "^2.6.0",
+    "@types/node": "20.5.0",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^4.3.1",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.16",
+    "formidable": "^3.5.0",
+    "mime": "^3.0.0",
+    "mongoose": "^7.4.3",
+    "multer": "^1.4.5-lts.1",
+    "next": "13.4.16",
+    "next-auth": "^4.23.1",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-use": "^17.4.0",
+    "recharts": "^2.7.3",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/formidable": "^3.4.1",
+    "@types/multer": "^1.4.7",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28"
+  }
+}

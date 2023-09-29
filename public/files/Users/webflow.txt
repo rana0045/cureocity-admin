@@ -1,0 +1,39 @@
+ref:https://webflow.com/blog/react-components-in-webflow
+
+
+1:Set up your React project
+2:Set up Webpack
+3:Set up Babel
+4:Set up S3 deployment
+5:Enable CORS
+6:Create a build script 
+ 
+
+
+Since Webflow doesn’t allow you to host your own script files on their servers, we’ll have to load the script from an external server. For this, we’ll use Amazon S3.
+
+
+Create an S3 CLI User
+
+  create a user for the AWS CLI to use:
+
+    In the AWS dashboard, go to Services > IAM > Users
+    Add a user and give it a name
+    Check Programmatic access > Next
+    Attach existing policies > check AmazonS3FullAccess
+    Click Next > Next > Create
+    Keep this page open and open a terminal
+    Type in aws configure
+    Enter your access key ID and secret access key as prompted
+
+Create a build script
+
+To bundle an app using Webpack, you only have to use the “webpack” command, so go ahead and add the following script to your package.json:
+
+"build": "webpack",
+Create a deploy script
+
+Add the following script to your package.json, making sure to replace BUCKETNAME with the name of your s3 bucket:
+
+"deploy": "aws s3 cp ./dist/bundle.js s3://BUCKETNAME/ --acl public-read"
+   
